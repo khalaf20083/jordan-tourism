@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Madaba - Jordan</title>
+    <link rel="stylesheet" href="amman.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Tourism in Jordan</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><h6>Home</h6></a></li>
+            <li> <a href="amman.html"><h6>Amman</h6></a></li>
+                <li><a href="alaqabah.html"><h6>Al Aqabah</h6></a></li>
+                    <li>   <a href="maan.html"><h6>Maan</h6></a></li>
+                        <li>    <a href="altaflah.html"><h6>Al Tafelah</h6></a></li>
+                            <li>    <a href="alkarak.html"><h6>Al Karak</h6></a></li>
+                                <li>   <a href="azzarqa.html"><h6>Zarqa</h6></a></li>
+ <li>   <a href="almafraq.html"><h6>Al Mafraq</h6></a></li>
+            <li>   <a href="irbad.html"><h6>Irbid</h6></a></li>
+                <li>  <a href="ajloun.html"><h6>Ajloun</h6></a></li>
+                    <li>  <a href="jarash.html"><h6>Jarash</h6></a></li>
+                        <li>  <a href="balqa.html"><h6>Balqa</h6></a></li>
+                            <li>   <a href="madaba.html"><h6>Madaba</h6></a></li>
+        </ul>
+      </nav>
+
+    <h1 class="main-title">Explore Madaba - The City of Mosaics</h1>
+
+    <div class="cards-container">
+
+        <!-- كنيسة الخارطة -->
+        <div class="card">
+            <img src="kni.jpg" alt="Map Church Madaba">
+            <h2>St. George's Church (Map Church)</h2>
+            <p>Home to the oldest known mosaic map of the Holy Land, this 6th-century Byzantine church is a must-see in Madaba.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.9334749688373!2d35.791624375619534!3d31.717712174124273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cacd0363cbdf9%3A0xfb986f55dd6d15b5!2sSt%20George&#39;s%20Greek%20Orthodox%20Church!5e0!3m2!1sen!2sjo!4v1747945907417!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/JRPnT5psWE2bu1cK6" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/WwZTkShxyRu1tk4B7" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- جبل نيبو -->
+        <div class="card">
+            <img src="ne.jpg" alt="Mount Nebo">
+            <h2>Mount Nebo</h2>
+            <p>The biblical site where Prophet Moses is believed to have seen the Promised Land. Offers breathtaking views and mosaics.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27136.632379125036!2d35.70467789634687!3d31.768329892457256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cad7ed4c82179%3A0x131a1cf280726293!2sMount%20Nebo!5e0!3m2!1sen!2sjo!4v1747946048986!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/Tb6YragWfKgkfvdT9" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/z2uQD9SX91aToQ1Y8" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- أم الرصاص -->
+        <div class="card">
+            <img src="rs.jpg" alt="Umm ar-Rasas">
+            <h2>Umm ar-Rasas</h2>
+            <p>A UNESCO World Heritage archaeological site with stunning Byzantine mosaics and Roman ruins southeast of Madaba.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6803.702066216598!2d35.905980495999906!3d31.500778216873268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1504a7fb3c90f9cd%3A0x1c63b3dadc48e8e1!2sUmm%20ar-Rasas!5e0!3m2!1sen!2sjo!4v1747946225199!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/6Vu6ru9FYPAVXRqj9" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/hJ89tXAEEFvPgKJL6" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            menuToggle?.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+          function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const nav = document.querySelector("nav");
+
+          menuToggle.addEventListener("click", function () {
+              nav.classList.toggle("active");
+          });
+      });
+
+      function showText(button) {
+          button.classList.toggle("show-text");
+      }
+      
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Balqa - Jordan</title>
+    <link rel="stylesheet" href="amman.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Tourism in Jordan</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><h6>Home</h6></a></li>
+            <li> <a href="amman.html"><h6>Amman</h6></a></li>
+                <li><a href="alaqabah.html"><h6>Al Aqabah</h6></a></li>
+                    <li>   <a href="maan.html"><h6>Maan</h6></a></li>
+                        <li>    <a href="altaflah.html"><h6>Al Tafelah</h6></a></li>
+                            <li>    <a href="alkarak.html"><h6>Al Karak</h6></a></li>
+                                <li>   <a href="azzarqa.html"><h6>Zarqa</h6></a></li>
+ <li>   <a href="almafraq.html"><h6>Al Mafraq</h6></a></li>
+            <li>   <a href="irbad.html"><h6>Irbid</h6></a></li>
+                <li>  <a href="ajloun.html"><h6>Ajloun</h6></a></li>
+                    <li>  <a href="jarash.html"><h6>Jarash</h6></a></li>
+                        <li>  <a href="balqa.html"><h6>Balqa</h6></a></li>
+                        <li><a href="madaba.html"><h6 class="madaba">Madaba</h6></a></li>
+                    </ul>
+      </nav>
+    <h1 class="main-title">Explore Balqa - Nature and History</h1>
+
+    <div class="cards-container">
+
+        <!-- السلط المدينة التراثية -->
+        <div class="card">
+            <img src="slt.jpg" alt="As-Salt City">
+            <h2>As-Salt Heritage City</h2>
+            <p>A UNESCO World Heritage site known for its beautiful Ottoman-era architecture and cultural harmony.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.1123792373287!2d35.72589687563242!3d32.03914947398067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cbd84443dc6cf%3A0x838eac21f4fabd53!2z2YjYs9i3INmF2K_ZitmG2Kkg2KfZhNiz2YTYtyDYp9mE2YLYr9mK2YXZhw!5e0!3m2!1sen!2sjo!4v1747945261025!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/TDWMUR8s9UAxEtiK9" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/cZCUWagKNVLEQSiZ9" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- وادي شعيب -->
+        <div class="card">
+            <img src="sh.jpg" alt="Wadi Shuayb">
+            <h2>Wadi Shuayb</h2>
+            <p>A beautiful valley with natural springs and lush greenery, named after Prophet Shuayb, offering tranquil hiking paths.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108363.82334317293!2d35.57154767713635!3d31.923724706238254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cb7430aefbf65%3A0xf3dfbc754af6e954!2sWadi%20Shueib!5e0!3m2!1sen!2sjo!4v1747945492074!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/ZvAKFg29WdG7oStP6" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/uPGti7QWpcZdygDv9" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- دير علا -->
+        <div class="card">
+            <img src="der.jpg" alt="Deir Alla">
+            <h2>Deir Alla</h2>
+            <p>An archaeological site in the Jordan Valley known for ancient inscriptions and its historical significance.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27012.955347897605!2d35.60110269744193!3d32.187536030561645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c93723c6f8e75%3A0xa67937d4e8d2ce4a!2sDayr%20&#39;Allah!5e0!3m2!1sen!2sjo!4v1747945662856!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/wyLARz9YBXDksHQV6" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/wyLARz9YBXDksHQV6" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            menuToggle?.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+          function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const nav = document.querySelector("nav");
+
+          menuToggle.addEventListener("click", function () {
+              nav.classList.toggle("active");
+          });
+      });
+
+      function showText(button) {
+          button.classList.toggle("show-text");
+      }
+      
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+  </script>
+
+
+</body>
+</html>

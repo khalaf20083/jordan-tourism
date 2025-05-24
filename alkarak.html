@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Al Karak - Jordan</title>
+    <link rel="stylesheet" href="amman.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Tourism in Jordan</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><h6>Home</h6></a></li>
+            <li> <a href="amman.html"><h6>Amman</h6></a></li>
+                <li><a href="alaqabah.html"><h6>Al Aqabah</h6></a></li>
+                    <li>   <a href="maan.html"><h6>Maan</h6></a></li>
+                        <li>    <a href="altaflah.html"><h6>Al Tafelah</h6></a></li>
+                            <li>    <a href="alkarak.html"><h6>Al Karak</h6></a></li>
+                                <li>   <a href="azzarqa.html"><h6>Zarqa</h6></a></li>
+ <li>   <a href="almafraq.html"><h6>Al Mafraq</h6></a></li>
+            <li>   <a href="irbad.html"><h6>Irbid</h6></a></li>
+                <li>  <a href="ajloun.html"><h6>Ajloun</h6></a></li>
+                    <li>  <a href="jarash.html"><h6>Jarash</h6></a></li>
+                        <li>  <a href="balqa.html"><h6>Balqa</h6></a></li>
+                        <li><a href="madaba.html"><h6 class="madaba">Madaba</h6></a></li>
+                    </ul>
+      </nav>
+    <h1 class="main-title">Explore Al Karak - The Castle City</h1>
+
+    <div class="cards-container">
+
+        <!-- قلعة الكرك -->
+        <div class="card">
+            <img src="ccc.jpg" alt="Karak Castle">
+            <h2>Karak Castle</h2>
+            <p>Karak Castle is one of the largest crusader castles in the Levant, offering a breathtaking view over the valleys below.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.8190610935264!2d35.70187917519476!3d31.1800566659128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15034046df89c0e1%3A0x67456d4cf3328f8!2z2YXYr9in2YUg2KfZhNmF2LnZhNin2YQ!5e0!3m2!1sar!2sjo!4v1716111425461!5m2!1sar!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="links">
+                <a href="https://maps.app.goo.gl/33S4fjd3EE2tuGnNA" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/znmQQaSBMbcMWXw88" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- حمامات وادي بن حماد -->
+        <div class="card">
+            <img src="hmad.jpg" alt="Wadi Bin Hammad">
+            <h2>Wadi Bin Hammad Hot Springs</h2>
+            <p>A hidden gem with lush greenery, hot springs, and waterfalls located in a dramatic canyon in Al Karak Governorate.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.1197625069326!2d35.62795232553489!3d31.300434857977294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15036d93f9647735%3A0x4e6408f6825384ae!2sWadi%20Bin%20Hammad!5e0!3m2!1sar!2sjo!4v1747937868587!5m2!1sar!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="links">
+                <a href="https://maps.app.goo.gl/33S4fjd3EE2tuGnNA" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/H3e1AhmyW92sa9Na7" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- سد الموجب -->
+        <div class="card">
+            <img src="mojb.jpg" alt="Mujib Dam">
+            <h2>Mujib Dam</h2>
+            <p>Mujib Dam is one of the most important water reservoirs in Jordan, offering scenic views and a peaceful environment near Karak.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27234.864960054172!2d35.82610005000001!3d31.43180650000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15035c2428e110f7%3A0xf3cf41657525c9f5!2z2LPYryDYp9mE2YXZiNis2Kg!5e0!3m2!1sar!2sjo!4v1747938081276!5m2!1sar!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="links">
+                <a href="https://maps.app.goo.gl/33S4fjd3EE2tuGnNA" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/SJxeDFELsxmdui646" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            menuToggle?.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+          function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const nav = document.querySelector("nav");
+
+          menuToggle.addEventListener("click", function () {
+              nav.classList.toggle("active");
+          });
+      });
+
+      function showText(button) {
+          button.classList.toggle("show-text");
+      }
+      
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+  </script>
+
+
+</body>
+</html>

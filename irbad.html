@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irbid - Jordan</title>
+    <link rel="stylesheet" href="amman.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Tourism in Jordan</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><h6>Home</h6></a></li>
+            <li> <a href="amman.html"><h6>Amman</h6></a></li>
+                <li><a href="alaqabah.html"><h6>Al Aqabah</h6></a></li>
+                    <li>   <a href="maan.html"><h6>Maan</h6></a></li>
+                        <li>    <a href="altaflah.html"><h6>Al Tafelah</h6></a></li>
+                            <li>    <a href="alkarak.html"><h6>Al Karak</h6></a></li>
+                                <li>   <a href="azzarqa.html"><h6>Zarqa</h6></a></li>
+ <li>   <a href="almafraq.html"><h6>Al Mafraq</h6></a></li>
+            <li>   <a href="irbad.html"><h6>Irbid</h6></a></li>
+                <li>  <a href="ajloun.html"><h6>Ajloun</h6></a></li>
+                    <li>  <a href="jarash.html"><h6>Jarash</h6></a></li>
+                        <li>  <a href="balqa.html"><h6>Balqa</h6></a></li>
+                        <li><a href="madaba.html"><h6 class="madaba">Madaba</h6></a></li>
+
+        </ul>
+      </nav>
+    <h1 class="main-title">Explore Irbid - The Northern Jewel of Jordan</h1>
+
+    <div class="cards-container">
+
+        <!-- أم قيس -->
+        <div class="card">
+            <img src="ges.jpg" alt="Umm Qais Ruins">
+            <h2>Umm Qais</h2>
+            <p>A stunning Greco-Roman archaeological site with panoramic views of the Sea of Galilee, Golan Heights, and Yarmouk River Valley.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26873.530966384715!2d35.66745199867638!3d32.65435121773583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c6d07287b7199%3A0x96d0d420e01bf0b1!2sUmm%20Qais!5e0!3m2!1sen!2sjo!4v1747942870994!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/b3eE7KDKwuRaiZyT9" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/ad9BjfwYF99e4paMA" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- متحف دار السرايا -->
+        <div class="card">
+            <img src="mt.jpg" alt="Dar Al-Saraya Museum">
+            <h2>Dar Al-Saraya Museum</h2>
+            <p>This historic Ottoman building turned museum offers a rich display of Irbid's history, culture, and archaeological finds.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.814667331782!2d35.84545597565346!3d32.557791173756016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c76a191f14817%3A0x270d9c5549da66e3!2sDar%20As%20Saraya%20Osmanli%20Museum!5e0!3m2!1sen!2sjo!4v1747943035822!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/FCM9TD2U7dVSkway8" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/m7EKjQzFyVNjeJqx9" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+        <!-- بيت عرار الثقافي -->
+        <div class="card">
+            <img src="arar.jpg" alt="Arar Cultural House">
+            <h2>Arar Cultural House</h2>
+            <p>The house of the famous Jordanian poet Mustafa Wahbi Al-Tal (Arar), now a cultural center and museum showcasing his legacy and local arts.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3362.823529981573!2d35.844107875653705!3d32.5575546737561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c77d5f5ea640d%3A0x29e850547a6c347a!2sArar&#39;s%20Cultural%20House!5e0!3m2!1sen!2sjo!4v1747943254936!5m2!1sen!2sjo" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <div class="links">
+                <a href="https://maps.app.goo.gl/ZzEjwiQ1mZkfhA8w9" target="_blank">hotel</a>
+                <a href="https://maps.app.goo.gl/4m3mxTXxHhzpYjwX6" target="_blank">restaurant</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+            menuToggle?.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+          function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+          }
+        
+      document.addEventListener("DOMContentLoaded", function () {
+          const menuToggle = document.querySelector(".menu-toggle");
+          const nav = document.querySelector("nav");
+
+          menuToggle.addEventListener("click", function () {
+              nav.classList.toggle("active");
+          });
+      });
+
+      function showText(button) {
+          button.classList.toggle("show-text");
+      }
+     
+        function toggleMenu() {
+          const navLinks = document.getElementById("navLinks");
+          navLinks.classList.toggle("active");
+        }
+      </script>
+      
+
+
+</body>
+</html>
